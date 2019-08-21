@@ -1,0 +1,272 @@
+{
+   "title": "Period",
+   "id": "4b5ac4c84352c8c916048f2732123179",
+   "workspace": {
+      "dimensions": {
+         "w": 1237
+      },
+      "datasources": [
+         "5807402b5cb2c73b20b9394ecec1e371"
+      ]
+   },
+   "showToolbar": false,
+   "appliedMigrations": {
+      "post_dst": true,
+      "separate_root_dsts": true,
+      "result_rows2": true
+   },
+   "components": [
+      {
+         "type": "panel_grid",
+         "id": "2613d375-1",
+         "displayName": "Layout Grid",
+         "components": [
+            {
+               "type": "input",
+               "id": "8859c824-2",
+               "displayName": "User Input Control",
+               "layoutConfig": {
+                  "x": 0,
+                  "y": 0
+               },
+               "dstContext": {
+                  "id": "dst8859c8242",
+                  "kid": "4b5ac4c84352c8c916048f2732123179"
+               },
+               "components": [
+                  {
+                     "type": "proxy",
+                     "role": "values",
+                     "id": "1418fa38-3",
+                     "displayName": "Values",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "GROUP(SLICE(5807402b5cb2c73b20b9394ecec1e371@B:B;))",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [],
+                     "autoFmt": false
+                  },
+                  {
+                     "type": "proxy",
+                     "role": "labels",
+                     "id": "ed093fe1-4",
+                     "displayName": "Labels",
+                     "formulas": [],
+                     "data": [],
+                     "autoFmt": false
+                  }
+               ],
+               "scope": 2,
+               "propName": "campName",
+               "inputType": 1,
+               "inputLabel": "Campaign Name",
+               "controlWidth": true,
+               "width": "500"
+            },
+            {
+               "type": "input",
+               "id": "40cc0a1e-14",
+               "displayName": "User Input Control 4",
+               "layoutConfig": {
+                  "x": 1,
+                  "y": 0
+               },
+               "dstContext": {
+                  "id": "dst40cc0a1e14",
+                  "kid": "4b5ac4c84352c8c916048f2732123179"
+               },
+               "components": [
+                  {
+                     "type": "proxy",
+                     "role": "values",
+                     "id": "cd2b6578-15",
+                     "displayName": "Values",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "array(\"ytd\",\"last_7d\",\"this_month\",\"last_month\",\"last_30d\")",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [],
+                     "autoFmt": false
+                  },
+                  {
+                     "type": "proxy",
+                     "role": "labels",
+                     "id": "e8ad50fd-16",
+                     "displayName": "Labels",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "array(\"YTD\",\"Last 7 Days\",\"This Month\",\"Last Month\",\"Last 30 Days\")",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [],
+                     "autoFmt": false
+                  }
+               ],
+               "scope": 2,
+               "propName": "period",
+               "inputType": 1,
+               "inputLabel": "Period",
+               "controlWidth": true,
+               "width": "500"
+            }
+         ],
+         "rows": 1,
+         "cols": 2
+      },
+      {
+         "type": "panel_grid",
+         "id": "4c4e7c84-1",
+         "displayName": "Layout Grid 2",
+         "components": [
+            {
+               "type": "input",
+               "id": "18389055-5",
+               "displayName": "User Input Control 2",
+               "layoutConfig": {
+                  "x": 0,
+                  "y": 0
+               },
+               "vis": false,
+               "dstContext": {
+                  "id": "dst183890555",
+                  "kid": "4b5ac4c84352c8c916048f2732123179"
+               },
+               "components": [
+                  {
+                     "type": "proxy",
+                     "role": "values",
+                     "id": "5c98a3f7-6",
+                     "displayName": "Values",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "expiryScheme": [
+                              {
+                                 "expiryType": "EOD"
+                              }
+                           ],
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "DATEVALUE(SWITCH($period,\"ytd\",DATE_STARTOF(TODAY(),\"1\"),\"last_7d\",date_add(today(),\"5\",\"-7\"),\"this_month\",date_startof(today(),\"3\"),\"last_month\",date_startof(today(),\"3\",\"-1\"),\"last_30d\",date_add(today(),\"5\",\"-30\")),\"yyyy-MM-dd\")",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [],
+                     "autoFmt": false
+                  },
+                  {
+                     "type": "proxy",
+                     "role": "labels",
+                     "id": "73fa1039-7",
+                     "displayName": "Labels",
+                     "formulas": [],
+                     "data": [],
+                     "autoFmt": false
+                  }
+               ],
+               "scope": 2,
+               "propName": "start",
+               "controlHidden": "hidden",
+               "inputType": 1
+            },
+            {
+               "type": "input",
+               "id": "85e5f9ae-11",
+               "displayName": "User Input Control 3",
+               "layoutConfig": {
+                  "x": 1,
+                  "y": 0
+               },
+               "vis": false,
+               "dstContext": {
+                  "id": "dst85e5f9ae11",
+                  "kid": "4b5ac4c84352c8c916048f2732123179"
+               },
+               "components": [
+                  {
+                     "type": "proxy",
+                     "role": "values",
+                     "id": "860bfae5-12",
+                     "displayName": "Values",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "expiryScheme": [
+                              {
+                                 "expiryType": "EOD"
+                              }
+                           ],
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "DATEVALUE(SWITCH($period,\"ytd\",TODAY(),\"last_7d\",YESTERDAY(),\"this_month\",TODAY(),\"last_month\",DATE_ENDOF(today(),\"3\",\"-1\"),\"last_30d\",YESTERDAY()),\"yyyy-MM-dd\")",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [],
+                     "autoFmt": false
+                  },
+                  {
+                     "type": "proxy",
+                     "role": "labels",
+                     "id": "67b07d4f-13",
+                     "displayName": "Labels",
+                     "formulas": [],
+                     "data": [],
+                     "autoFmt": false
+                  }
+               ],
+               "scope": 2,
+               "propName": "end",
+               "controlHidden": "hidden",
+               "inputType": 1
+            }
+         ],
+         "rows": 1,
+         "cols": 2
+      }
+   ]
+}
