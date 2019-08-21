@@ -1,0 +1,201 @@
+{
+   "title": "Goals",
+   "id": "c4a7615971a9c43a8644f332a7c2fcc0",
+   "workspace": {
+      "dimensions": {
+         "w": 550
+      },
+      "datasources": [
+         "e2ac963220fb4d4d733b9c495bec5a22"
+      ]
+   },
+   "datasourceProps": [
+      "start",
+      "end"
+   ],
+   "appliedMigrations": {
+      "post_dst": true,
+      "separate_root_dsts": true,
+      "result_rows2": true
+   },
+   "components": [
+      {
+         "type": "chart_series",
+         "id": "dc90ea54-1",
+         "displayName": "Bar/Line Chart",
+         "dstContext": {
+            "id": "dstdc90ea541",
+            "kid": "c4a7615971a9c43a8644f332a7c2fcc0",
+            "ops": [
+               {
+                  "type": "group",
+                  "groupBy": "40c1c0e73"
+               }
+            ],
+            "aggs": {
+               "74b84e402": "auto"
+            }
+         },
+         "components": [
+            {
+               "type": "series_data",
+               "role": "series",
+               "id": "74b84e40-2",
+               "displayName": "Goals",
+               "fmt": "num",
+               "fmtArgs": {
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": true,
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "isGrouped": true,
+                     "resultCount": 1
+                  },
+                  "autoFmt": {
+                     "fmtArgs": {
+                        "precision": "0"
+                     },
+                     "defaultAggregate": "SUM",
+                     "fmt": "num"
+                  }
+               },
+               "formulas": [
+                  {
+                     "txt": "IF($period=\"ytd\",LOOKUP(&'40c1c0e7-3',GROUP(DATE_CONVERT(SELECT(SLICE(e2ac963220fb4d4d733b9c495bec5a22@A:A;),SLICE(e2ac963220fb4d4d733b9c495bec5a22@B:B;)=$campName),\"yyyyMMdd\",\"MMM-yy\")),GROUPBY(DATE_CONVERT(SELECT(SLICE(e2ac963220fb4d4d733b9c495bec5a22@A:A;),SLICE(e2ac963220fb4d4d733b9c495bec5a22@B:B;)=$campName),\"yyyyMMdd\",\"MMM-yy\"),SELECT(SLICE(e2ac963220fb4d4d733b9c495bec5a22@G:G;),SLICE(e2ac963220fb4d4d733b9c495bec5a22@B:B;)=$campName))),LOOKUP(DATE_CONVERT(&'40c1c0e7-3',\"dd-MMM-yy\",\"yyyyMMdd\"),GROUP(SELECT(SLICE(e2ac963220fb4d4d733b9c495bec5a22@A:A;),SLICE(e2ac963220fb4d4d733b9c495bec5a22@B:B;)=$campName)),GROUPBY(SELECT(SLICE(e2ac963220fb4d4d733b9c495bec5a22@A:A;),SLICE(e2ac963220fb4d4d733b9c495bec5a22@B:B;)=$campName),SELECT(SLICE(e2ac963220fb4d4d733b9c495bec5a22@G:G;),SLICE(e2ac963220fb4d4d733b9c495bec5a22@B:B;)=$campName))))",
+                     "ver": 2
+                  }
+               ],
+               "data": [
+                  [
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     1,
+                     0,
+                     1,
+                     1,
+                     3,
+                     0,
+                     0,
+                     2,
+                     0,
+                     2,
+                     0,
+                     3,
+                     4,
+                     0,
+                     2,
+                     0,
+                     1,
+                     0,
+                     0,
+                     1,
+                     0,
+                     0,
+                     0,
+                     2,
+                     1
+                  ]
+               ],
+               "autoFmt": true,
+               "seriesName": "Goals",
+               "axis": "038f4606-4",
+               "overrideColor": true,
+               "color": "cx-theme_red_4"
+            },
+            {
+               "type": "chart_axis",
+               "role": "axis_x",
+               "id": "40c1c0e7-3",
+               "displayName": "Dates",
+               "renamed": true,
+               "fmt": "dat2",
+               "fmtArgs": {
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": false,
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "isGrouped": true,
+                     "isDSTApplied": true,
+                     "resultCount": 1
+                  },
+                  "autoFmt": {
+                     "fmtArgs": {
+                        "dateInputFormat": "custom",
+                        "dateInputFormatCustom": "d-MMM-yy",
+                        "dateFormat": "custom",
+                        "dateFormatCustom": "d-MMM-yy"
+                     },
+                     "defaultAggregate": "COUNT",
+                     "fmt": "dat2"
+                  }
+               },
+               "formulas": [
+                  {
+                     "txt": "IF($period=\"ytd\",DATEVALUE(DATERANGE(DATE($start,\"yyyy-MM-dd\"),DATE($end,\"yyyy-MM-dd\")),\"MMM-yy\"),DATEVALUE(DATERANGE(DATE($start,\"yyyy-MM-dd\"),DATE($end,\"yyyy-MM-dd\")),\"dd-MMM-yy\"))",
+                     "ver": 2
+                  }
+               ],
+               "data": [
+                  [
+                     "22-Jul-19",
+                     "23-Jul-19",
+                     "24-Jul-19",
+                     "25-Jul-19",
+                     "26-Jul-19",
+                     "27-Jul-19",
+                     "28-Jul-19",
+                     "29-Jul-19",
+                     "30-Jul-19",
+                     "31-Jul-19",
+                     "1-Aug-19",
+                     "2-Aug-19",
+                     "3-Aug-19",
+                     "4-Aug-19",
+                     "5-Aug-19",
+                     "6-Aug-19",
+                     "7-Aug-19",
+                     "8-Aug-19",
+                     "9-Aug-19",
+                     "10-Aug-19",
+                     "11-Aug-19",
+                     "12-Aug-19",
+                     "13-Aug-19",
+                     "14-Aug-19",
+                     "15-Aug-19",
+                     "16-Aug-19",
+                     "17-Aug-19",
+                     "18-Aug-19",
+                     "19-Aug-19",
+                     "20-Aug-19"
+                  ]
+               ],
+               "autoFmt": true,
+               "label": "Untitled",
+               "labelAngle": "45",
+               "labelDrop": "1",
+               "showLabelTicks": true
+            },
+            {
+               "type": "chart_axis",
+               "role": "axis_y",
+               "id": "038f4606-4",
+               "displayName": "Untitled",
+               "fmt": "num",
+               "fmtArgs": {},
+               "formulas": [],
+               "data": [],
+               "autoFmt": true,
+               "dataDisabled": true,
+               "label": "Untitled",
+               "labelDrop": 0,
+               "grid": true
+            }
+         ]
+      }
+   ]
+}
