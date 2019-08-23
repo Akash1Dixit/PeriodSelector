@@ -1,0 +1,137 @@
+{
+   "title": "LinkedIn Impressions",
+   "id": "87c688568b037e273131c5dda50c7ed0",
+   "animate": false,
+   "workspace": {
+      "dimensions": {
+         "w": 863
+      },
+      "datasources": [
+         "4f561e89ee879ddeb1aa65edebed870a"
+      ]
+   },
+   "datasourceProps": [
+      "sdate_linkedin",
+      "edate_linkedin"
+   ],
+   "appliedMigrations": {
+      "post_dst": true,
+      "separate_root_dsts": true,
+      "result_rows2": true
+   },
+   "components": [
+      {
+         "type": "chart_series",
+         "id": "d14c3316-1",
+         "displayName": "Bar/Line Chart",
+         "dstContext": {
+            "id": "dstd14c33161",
+            "kid": "87c688568b037e273131c5dda50c7ed0",
+            "ops": [
+               {
+                  "type": "group",
+                  "groupBy": "29ea77393"
+               }
+            ],
+            "aggs": {
+               "c35707ba2": "auto"
+            }
+         },
+         "components": [
+            {
+               "type": "series_data",
+               "role": "series",
+               "id": "c35707ba-2",
+               "displayName": "Impressions",
+               "fmt": "num",
+               "fmtArgs": {
+                  "autoFmt": {
+                     "fmtArgs": {
+                        "precision": "0"
+                     },
+                     "defaultAggregate": "SUM",
+                     "fmt": "num"
+                  },
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": true,
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "isGrouped": true,
+                     "resultCount": 1
+                  }
+               },
+               "formulas": [
+                  {
+                     "txt": "IF($period=\"ytd\",LOOKUP(&'29ea7739-3',GROUP(SELECT(DATEVALUE(SUBSTRING(4f561e89ee879ddeb1aa65edebed870a@/elements/timeRange/end;,0,10),\"MMM yyyy\"),IN(DATEVALUE(SUBSTRING(4f561e89ee879ddeb1aa65edebed870a@/elements/timeRange/end;,0,10),\"MMM yyyy\"),DATEVALUE(DATERANGE(SUBSTRING($sdate_linkedin,0,10),SUBSTRING($edate_linkedin,0,10)),\"MMM yyyy\")))),GROUPBY(SELECT(DATEVALUE(SUBSTRING(4f561e89ee879ddeb1aa65edebed870a@/elements/timeRange/end;,0,10),\"MMM yyyy\"),IN(DATEVALUE(SUBSTRING(4f561e89ee879ddeb1aa65edebed870a@/elements/timeRange/end;,0,10),\"MMM yyyy\"),DATEVALUE(DATERANGE(SUBSTRING($sdate_linkedin,0,10),SUBSTRING($edate_linkedin,0,10)),\"MMM yyyy\"))),SELECT(4f561e89ee879ddeb1aa65edebed870a@/elements/totalShareStatistics/impressionCount;,IN(DATEVALUE(SUBSTRING(4f561e89ee879ddeb1aa65edebed870a@/elements/timeRange/end;,0,10),\"MMM yyyy\"),DATEVALUE(DATERANGE(SUBSTRING($sdate_linkedin,0,10),SUBSTRING($edate_linkedin,0,10)),\"MMM yyyy\"))))),LOOKUP(&'29ea7739-3',GROUP(SELECT(DATEVALUE(SUBSTRING(4f561e89ee879ddeb1aa65edebed870a@/elements/timeRange/end;,0,10),\"dd-MMM-yy\"),IN(DATEVALUE(SUBSTRING(4f561e89ee879ddeb1aa65edebed870a@/elements/timeRange/end;,0,10),\"dd-MMM-yy\"),DATEVALUE(DATERANGE(SUBSTRING($sdate_linkedin,0,10),SUBSTRING($edate_linkedin,0,10)),\"dd-MMM-yy\")))),GROUPBY(SELECT(DATEVALUE(SUBSTRING(4f561e89ee879ddeb1aa65edebed870a@/elements/timeRange/end;,0,10),\"dd-MMM-yy\"),IN(DATEVALUE(SUBSTRING(4f561e89ee879ddeb1aa65edebed870a@/elements/timeRange/end;,0,10),\"dd-MMM-yy\"),DATEVALUE(DATERANGE(SUBSTRING($sdate_linkedin,0,10),SUBSTRING($edate_linkedin,0,10)),\"dd-MMM-yy\"))),SELECT(4f561e89ee879ddeb1aa65edebed870a@/elements/totalShareStatistics/impressionCount;,IN(DATEVALUE(SUBSTRING(4f561e89ee879ddeb1aa65edebed870a@/elements/timeRange/end;,0,10),\"dd-MMM-yy\"),DATEVALUE(DATERANGE(SUBSTRING($sdate_linkedin,0,10),SUBSTRING($edate_linkedin,0,10)),\"dd-MMM-yy\"))))))",
+                     "ver": 2
+                  }
+               ],
+               "data": [],
+               "autoFmt": true,
+               "seriesName": "Impressions",
+               "renderer": "line",
+               "chartStyle": "points_area",
+               "showValues": true,
+               "axis": "376f24bb-4",
+               "overrideColor": true,
+               "color": "cx-theme_violet_5"
+            },
+            {
+               "type": "chart_axis",
+               "role": "axis_x",
+               "id": "29ea7739-3",
+               "displayName": "dates",
+               "fmt": "dat2",
+               "fmtArgs": {
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": false,
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "isGrouped": true,
+                     "isDSTApplied": true,
+                     "resultCount": 1
+                  },
+                  "autoFmt": {
+                     "fmtArgs": {
+                        "dateInputFormat": "custom",
+                        "dateInputFormatCustom": "d-MMM-yy",
+                        "dateFormat": "custom",
+                        "dateFormatCustom": "d-MMM-yy"
+                     },
+                     "defaultAggregate": "COUNT",
+                     "fmt": "dat2"
+                  }
+               },
+               "formulas": [
+                  {
+                     "txt": "IF($period=\"ytd\",SELECT(DATEVALUE(SUBSTRING(4f561e89ee879ddeb1aa65edebed870a@/elements/timeRange/end;,0,10),\"MMM yyyy\"),IN(DATEVALUE(SUBSTRING(4f561e89ee879ddeb1aa65edebed870a@/elements/timeRange/end;,0,10),\"MMM yyyy\"),DATEVALUE(DATERANGE(SUBSTRING($sdate_linkedin,0,10),SUBSTRING($edate_linkedin,0,10)),\"MMM yyyy\"))),SELECT(DATEVALUE(SUBSTRING(4f561e89ee879ddeb1aa65edebed870a@/elements/timeRange/end;,0,10),\"dd-MMM-yy\"),IN(DATEVALUE(SUBSTRING(4f561e89ee879ddeb1aa65edebed870a@/elements/timeRange/end;,0,10),\"dd-MMM-yy\"),DATEVALUE(DATERANGE(SUBSTRING($sdate_linkedin,0,10),SUBSTRING($edate_linkedin,0,10)),\"dd-MMM-yy\")))\n)",
+                     "ver": 2
+                  }
+               ],
+               "data": [],
+               "autoFmt": true,
+               "label": "dates",
+               "labelAngle": "-45",
+               "labelDrop": "1",
+               "showLabelTicks": true
+            },
+            {
+               "type": "chart_axis",
+               "role": "axis_y",
+               "id": "376f24bb-4",
+               "displayName": "Untitled",
+               "fmt": "num",
+               "formulas": [],
+               "data": [],
+               "autoFmt": true,
+               "dataDisabled": true,
+               "label": "Untitled",
+               "labelDrop": 0,
+               "grid": true
+            }
+         ]
+      }
+   ]
+}
