@@ -1,0 +1,561 @@
+{
+   "title": "GoogleAdwords",
+   "id": "3020c6c7edf138a832cc858a16a50b26",
+   "workspace": {
+      "dimensions": {
+         "w": 1009
+      },
+      "datasources": [
+         "834d916b7712c0767eac7b20ef492959",
+         "0a09824405d84513454cba4131037038",
+         "e259c81aab8f4d700c49aa55df7aaa99",
+         "730aa2c6046c5285e645ee5227be1198",
+         "47742c5d3884d31b96e642695a0c8294"
+      ]
+   },
+   "appliedMigrations": {
+      "post_dst": true,
+      "separate_root_dsts": true,
+      "result_rows2": true
+   },
+   "components": [
+      {
+         "type": "panel_grid",
+         "id": "a49ac4ba-1",
+         "displayName": "Layout Grid",
+         "components": [
+            {
+               "type": "input",
+               "id": "f288d4dc-2",
+               "displayName": "User Input Control",
+               "layoutConfig": {
+                  "x": 0,
+                  "y": 0
+               },
+               "dstContext": {
+                  "id": "dstf288d4dc2",
+                  "kid": "3020c6c7edf138a832cc858a16a50b26"
+               },
+               "components": [
+                  {
+                     "type": "proxy",
+                     "role": "values",
+                     "id": "5bae805b-3",
+                     "displayName": "Values",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "SLICE(47742c5d3884d31b96e642695a0c8294@C:C;,2)",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [],
+                     "autoFmt": false
+                  },
+                  {
+                     "type": "proxy",
+                     "role": "labels",
+                     "id": "b3c4f71e-4",
+                     "displayName": "Labels",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "SLICE(47742c5d3884d31b96e642695a0c8294@B:B;,2)",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [],
+                     "autoFmt": false
+                  }
+               ],
+               "scope": 2,
+               "propName": "gaCampaignId",
+               "inputType": 1,
+               "inputLabel": "Campaign Name"
+            },
+            {
+               "type": "input",
+               "id": "7116e701-5",
+               "displayName": "User Input Control 2",
+               "layoutConfig": {
+                  "x": 2,
+                  "y": 0
+               },
+               "dstContext": {
+                  "id": "dst7116e7015",
+                  "kid": "3020c6c7edf138a832cc858a16a50b26"
+               },
+               "components": [
+                  {
+                     "type": "proxy",
+                     "role": "values",
+                     "id": "ac31dac2-6",
+                     "displayName": "Values",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "array(\"today\",\"last_7d\",\"this_month\",\"last_month\",\"last_30d\")",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [],
+                     "autoFmt": false
+                  },
+                  {
+                     "type": "proxy",
+                     "role": "labels",
+                     "id": "11f6b4d1-7",
+                     "displayName": "Labels",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "array(\"Today\",\"Last 7 Days\",\"This Month\",\"Last Month\",\"Last 30 Days\")",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [],
+                     "autoFmt": false
+                  }
+               ],
+               "scope": 2,
+               "propName": "period",
+               "inputType": 1,
+               "inputLabel": "Period"
+            }
+         ],
+         "rows": 1,
+         "cols": 3,
+         "widths": [
+            {
+               "x": 0,
+               "w": "45%"
+            },
+            {
+               "x": 2,
+               "w": "45%"
+            }
+         ],
+         "cellData": [
+            {
+               "x": 0,
+               "y": 0
+            },
+            {
+               "x": 2,
+               "y": 0
+            }
+         ]
+      },
+      {
+         "type": "table",
+         "id": "004cc343-8",
+         "displayName": "Table",
+         "dstContext": {
+            "id": "dst004cc3438",
+            "kid": "3020c6c7edf138a832cc858a16a50b26"
+         },
+         "components": [
+            {
+               "type": "table_col",
+               "role": "tcol",
+               "id": "f9a67475-9",
+               "displayName": "Impressions",
+               "namerenamed": true,
+               "size": "xx-small",
+               "fmt": "num",
+               "fmtArgs": {
+                  "autoFmt": {
+                     "fmtArgs": {
+                        "precision": "0"
+                     },
+                     "defaultAggregate": "SUM",
+                     "fmt": "num"
+                  },
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": false,
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "resultCount": 1
+                  }
+               },
+               "components": [
+                  {
+                     "type": "table_headers",
+                     "role": "customHeader",
+                     "id": "f565c85a-9",
+                     "displayName": "Impressions",
+                     "size": "xx-small",
+                     "fmt": "txt",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        }
+                     },
+                     "dstContext": {
+                        "id": "dstf565c85a9",
+                        "kid": "3020c6c7edf138a832cc858a16a50b26"
+                     },
+                     "conditions": [
+                        {
+                           "predicates": [
+                              {
+                                 "left": {
+                                    "self": 1
+                                 },
+                                 "type": "ne",
+                                 "right": {
+                                    "raw": "0"
+                                 }
+                              }
+                           ],
+                           "reactions": [
+                              {
+                                 "type": "background-color",
+                                 "value": "cx-bgcolor_fff",
+                                 "isScalar": true
+                              }
+                           ]
+                        }
+                     ],
+                     "formulas": [
+                        {
+                           "txt": "\"Impressions\"",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [],
+                     "mixin": "label",
+                     "align": "c",
+                     "font_style": "bold"
+                  }
+               ],
+               "formulas": [
+                  {
+                     "txt": "SWITCH($period,\"today\",SELECT(SLICE(834d916b7712c0767eac7b20ef492959@F:F;,2),SLICE(834d916b7712c0767eac7b20ef492959@C:C;,2)=$gaCampaignId),\"last_7d\",SELECT(SLICE(47742c5d3884d31b96e642695a0c8294@F:F;,2),SLICE(47742c5d3884d31b96e642695a0c8294@C:C;,2)=$gaCampaignId),\"this_month\",SELECT(SLICE(0a09824405d84513454cba4131037038@F:F;,2),SLICE(0a09824405d84513454cba4131037038@C:C;,2)=$gaCampaignId),\"last_month\",SELECT(SLICE(e259c81aab8f4d700c49aa55df7aaa99@F:F;,2),SLICE(e259c81aab8f4d700c49aa55df7aaa99@C:C;,2)=$gaCampaignId),\"last_30d\",SELECT(SLICE(730aa2c6046c5285e645ee5227be1198@F:F;,2),SLICE(730aa2c6046c5285e645ee5227be1198@C:C;,2)=$gaCampaignId))",
+                     "ver": 2
+                  }
+               ],
+               "data": [],
+               "autoFmt": true,
+               "name": "Impressions",
+               "index": 0,
+               "customHeader": true,
+               "align": "c"
+            },
+            {
+               "type": "table_col",
+               "role": "tcol",
+               "id": "c5db9257-12",
+               "displayName": "Clicks",
+               "namerenamed": true,
+               "size": "xx-small",
+               "fmt": "num",
+               "fmtArgs": {
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": false,
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "resultCount": 1
+                  },
+                  "autoFmt": {
+                     "fmtArgs": {
+                        "precision": "0"
+                     },
+                     "defaultAggregate": "SUM",
+                     "fmt": "num"
+                  }
+               },
+               "components": [
+                  {
+                     "type": "table_headers",
+                     "role": "customHeader",
+                     "id": "92585dd9-11",
+                     "displayName": "Clicks",
+                     "size": "xx-small",
+                     "fmt": "txt",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        }
+                     },
+                     "dstContext": {
+                        "id": "dst92585dd911",
+                        "kid": "3020c6c7edf138a832cc858a16a50b26"
+                     },
+                     "conditions": [
+                        {
+                           "predicates": [
+                              {
+                                 "left": {
+                                    "self": 1
+                                 },
+                                 "type": "ne",
+                                 "right": {
+                                    "raw": "0"
+                                 }
+                              }
+                           ],
+                           "reactions": [
+                              {
+                                 "type": "background-color",
+                                 "value": "cx-bgcolor_fff",
+                                 "isScalar": true
+                              }
+                           ]
+                        }
+                     ],
+                     "formulas": [
+                        {
+                           "txt": "\"Clicks\"",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [],
+                     "mixin": "label",
+                     "align": "c",
+                     "font_style": "bold"
+                  }
+               ],
+               "formulas": [
+                  {
+                     "txt": "SWITCH($period,\"today\",SELECT(SLICE(834d916b7712c0767eac7b20ef492959@D:D;,2),SLICE(834d916b7712c0767eac7b20ef492959@C:C;,2)=$gaCampaignId),\"last_7d\",SELECT(SLICE(47742c5d3884d31b96e642695a0c8294@D:D;,2),SLICE(47742c5d3884d31b96e642695a0c8294@C:C;,2)=$gaCampaignId),\"this_month\",SELECT(SLICE(0a09824405d84513454cba4131037038@D:D;,2),SLICE(0a09824405d84513454cba4131037038@C:C;,2)=$gaCampaignId),\"last_month\",SELECT(SLICE(e259c81aab8f4d700c49aa55df7aaa99@D:D;,2),SLICE(e259c81aab8f4d700c49aa55df7aaa99@C:C;,2)=$gaCampaignId),\"last_30d\",SELECT(SLICE(730aa2c6046c5285e645ee5227be1198@D:D;,2),SLICE(730aa2c6046c5285e645ee5227be1198@C:C;,2)=$gaCampaignId))",
+                     "ver": 2
+                  }
+               ],
+               "data": [],
+               "autoFmt": true,
+               "name": "Clicks",
+               "index": 1,
+               "customHeader": true,
+               "align": "c"
+            },
+            {
+               "type": "table_col",
+               "role": "tcol",
+               "id": "d094ce8e-15",
+               "displayName": "Conversions",
+               "namerenamed": true,
+               "size": "xx-small",
+               "fmt": "num",
+               "fmtArgs": {
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": false,
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "resultCount": 1
+                  },
+                  "autoFmt": {
+                     "fmtArgs": {
+                        "precision": "0"
+                     },
+                     "defaultAggregate": "SUM",
+                     "fmt": "num"
+                  }
+               },
+               "components": [
+                  {
+                     "type": "table_headers",
+                     "role": "customHeader",
+                     "id": "3f0fc766-13",
+                     "displayName": "Conversions",
+                     "size": "xx-small",
+                     "fmt": "txt",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        }
+                     },
+                     "dstContext": {
+                        "id": "dst3f0fc76613",
+                        "kid": "3020c6c7edf138a832cc858a16a50b26"
+                     },
+                     "conditions": [
+                        {
+                           "predicates": [
+                              {
+                                 "left": {
+                                    "self": 1
+                                 },
+                                 "type": "ne",
+                                 "right": {
+                                    "raw": "0"
+                                 }
+                              }
+                           ],
+                           "reactions": [
+                              {
+                                 "type": "background-color",
+                                 "value": "cx-bgcolor_fff",
+                                 "isScalar": true
+                              }
+                           ]
+                        }
+                     ],
+                     "formulas": [
+                        {
+                           "txt": "\"Conversions\"",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [],
+                     "mixin": "label",
+                     "align": "c",
+                     "font_style": "bold"
+                  }
+               ],
+               "formulas": [
+                  {
+                     "txt": "SWITCH($period,\"today\",SELECT(SLICE(834d916b7712c0767eac7b20ef492959@E:E;,2),SLICE(834d916b7712c0767eac7b20ef492959@C:C;,2)=$gaCampaignId),\"last_7d\",SELECT(SLICE(47742c5d3884d31b96e642695a0c8294@E:E;,2),SLICE(47742c5d3884d31b96e642695a0c8294@C:C;,2)=$gaCampaignId),\"this_month\",SELECT(SLICE(0a09824405d84513454cba4131037038@E:E;,2),SLICE(0a09824405d84513454cba4131037038@C:C;,2)=$gaCampaignId),\"last_month\",SELECT(SLICE(e259c81aab8f4d700c49aa55df7aaa99@E:E;,2),SLICE(e259c81aab8f4d700c49aa55df7aaa99@C:C;,2)=$gaCampaignId),\"last_30d\",SELECT(SLICE(730aa2c6046c5285e645ee5227be1198@E:E;,2),SLICE(730aa2c6046c5285e645ee5227be1198@C:C;,2)=$gaCampaignId))",
+                     "ver": 2
+                  }
+               ],
+               "data": [],
+               "autoFmt": true,
+               "name": "Conversions",
+               "index": 2,
+               "customHeader": true,
+               "align": "c"
+            },
+            {
+               "type": "table_col",
+               "role": "tcol",
+               "id": "42d9fa26-18",
+               "displayName": "CTR",
+               "namerenamed": true,
+               "size": "xx-small",
+               "fmt": "num",
+               "fmtArgs": {
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": false,
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "resultCount": 1
+                  },
+                  "autoFmt": {
+                     "fmtArgs": {
+                        "precision": "2"
+                     },
+                     "defaultAggregate": "SUM",
+                     "fmt": "num"
+                  }
+               },
+               "components": [
+                  {
+                     "type": "table_headers",
+                     "role": "customHeader",
+                     "id": "47411112-15",
+                     "displayName": "CTR",
+                     "size": "xx-small",
+                     "fmt": "txt",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        }
+                     },
+                     "dstContext": {
+                        "id": "dst4741111215",
+                        "kid": "3020c6c7edf138a832cc858a16a50b26"
+                     },
+                     "conditions": [
+                        {
+                           "predicates": [
+                              {
+                                 "left": {
+                                    "self": 1
+                                 },
+                                 "type": "ne",
+                                 "right": {
+                                    "raw": "0"
+                                 }
+                              }
+                           ],
+                           "reactions": [
+                              {
+                                 "type": "background-color",
+                                 "value": "cx-bgcolor_fff",
+                                 "isScalar": true
+                              }
+                           ]
+                        }
+                     ],
+                     "formulas": [
+                        {
+                           "txt": "\"CTR\"",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [],
+                     "mixin": "label",
+                     "align": "c",
+                     "font_style": "bold"
+                  }
+               ],
+               "formulas": [
+                  {
+                     "txt": "SWITCH($period,\"today\",SELECT(SLICE(834d916b7712c0767eac7b20ef492959@A:A;,2),SLICE(834d916b7712c0767eac7b20ef492959@C:C;,2)=$gaCampaignId),\"last_7d\",SELECT(SLICE(47742c5d3884d31b96e642695a0c8294@A:A;,2),SLICE(47742c5d3884d31b96e642695a0c8294@C:C;,2)=$gaCampaignId),\"this_month\",SELECT(SLICE(0a09824405d84513454cba4131037038@A:A;,2),SLICE(0a09824405d84513454cba4131037038@C:C;,2)=$gaCampaignId),\"last_month\",SELECT(SLICE(e259c81aab8f4d700c49aa55df7aaa99@A:A;,2),SLICE(e259c81aab8f4d700c49aa55df7aaa99@C:C;,2)=$gaCampaignId),\"last_30d\",SELECT(SLICE(730aa2c6046c5285e645ee5227be1198@A:A;,2),SLICE(730aa2c6046c5285e645ee5227be1198@C:C;,2)=$gaCampaignId))",
+                     "ver": 2
+                  }
+               ],
+               "data": [],
+               "autoFmt": true,
+               "name": "CTR",
+               "index": 3,
+               "customHeader": true,
+               "align": "c"
+            }
+         ]
+      }
+   ]
+}
