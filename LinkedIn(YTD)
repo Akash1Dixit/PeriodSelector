@@ -1,0 +1,1 @@
+https://api.linkedin.com/v2/adAnalyticsV2?q=analytics&pivot=CAMPAIGN&dateRange.start.day={date.startOfYear.format("d")}&dateRange.start.month={date.startOfYear.format("M")}&dateRange.start.year={date.startOfYear.format("yyyy")}&timeGranularity=MONTHLY&campaigns[0]=urn:li:sponsoredCampaign:{props.campaignid}
