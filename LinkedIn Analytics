@@ -1,0 +1,1591 @@
+{
+   "title": "LinkedIn Calculations",
+   "id": "b237e76a9a5df502fb18711314070a71",
+   "workspace": {
+      "dimensions": {
+         "w": 1147
+      },
+      "datasources": [
+         "f47a6e4a382786a50f4cee8bae9c10e2",
+         "ffa98a6d05b0ad0ff513c5a9157968a1",
+         "413c505c1e7adfc9ed4103b2dd718a52",
+         "33f4b7bb1d30089e9d77cdee444accc3",
+         "24e8dc83ba92980667ccab84488d01c0",
+         "4f561e89ee879ddeb1aa65edebed870a",
+         "9df6f3877cbc20d23086bfdac6531163"
+      ]
+   },
+   "datasourceProps": [
+      "campaignid"
+   ],
+   "showToolbar": false,
+   "appliedMigrations": {
+      "post_dst": true,
+      "separate_root_dsts": true,
+      "result_rows2": true
+   },
+   "components": [
+      {
+         "type": "panel_grid",
+         "id": "141c056d",
+         "displayName": "Layout Grid",
+         "renamed": true,
+         "components": [
+            {
+               "type": "input",
+               "id": "f8f216fc",
+               "displayName": "Campaign Name",
+               "layoutConfig": {
+                  "x": 0,
+                  "y": 0
+               },
+               "renamed": true,
+               "dstContext": {
+                  "id": "dstf8f216fc",
+                  "kid": "b237e76a9a5df502fb18711314070a71"
+               },
+               "components": [
+                  {
+                     "type": "proxy",
+                     "role": "values",
+                     "id": "45febe17",
+                     "displayName": "Values",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": true,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "9df6f3877cbc20d23086bfdac6531163@/elements/id;",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [
+                        [
+                           "120228265",
+                           "120233625",
+                           "126996326",
+                           "129967174",
+                           "129967214",
+                           "129967234",
+                           "132247654",
+                           "132247704",
+                           "132247714",
+                           "133083354",
+                           "133084474",
+                           "133875724",
+                           "133875794",
+                           "134171674",
+                           "134187614",
+                           "134187754",
+                           "134431484",
+                           "134751564",
+                           "134752404",
+                           "135134664",
+                           "135137184",
+                           "135137394",
+                           "135235924",
+                           "135274204",
+                           "135379254",
+                           "136381733",
+                           "137455576",
+                           "137488126",
+                           "137528446",
+                           "137701946",
+                           "137823156",
+                           "137823566",
+                           "137901784",
+                           "137921906",
+                           "138588404",
+                           "138604284",
+                           "138669713",
+                           "140976294",
+                           "140984424",
+                           "144206634",
+                           "144988734",
+                           "149833323"
+                        ]
+                     ],
+                     "autoFmt": false
+                  },
+                  {
+                     "type": "proxy",
+                     "role": "labels",
+                     "id": "8499b936",
+                     "displayName": "Labels",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": true,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "9df6f3877cbc20d23086bfdac6531163@/elements/name;",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [
+                        [
+                           "BIO 2016",
+                           "BIO 2016 - V2",
+                           "GMMS- Skills",
+                           "2017 - Aortic Supplement (Groups)",
+                           "2017 - Aortic Supplement (Nurses)",
+                           "2017 - Aortic Supplement (Surgeons)",
+                           "2017 AV Access Supplement: Groups",
+                           "2017 AV Access Supplement: Nurses",
+                           "2017 AV Access Supplement: Surgeons",
+                           "Tigris-Vascular Surgeons- Titles",
+                           "Tigris-Vascular Surgeons- Groups",
+                           "GMMS- Titles",
+                           "GMMS- Groups",
+                           "1709 Manual Syringe- Titles",
+                           "1709 Manual Syringe- Skills",
+                           "1709 Manual Syringe- Groups",
+                           "Manual Syringes: Low Carryover 9.29.17",
+                           "VEITH- 2017",
+                           "VEITH- 2017 Skills + Location",
+                           "1710.31.imi.subassemblies.titles+skills",
+                           "1710.31.imi.subassemblies.titles+company",
+                           "1710.31.imi.subassemblies.Groups",
+                           "VEITH- 2017 Groups",
+                           "1711 IMI MS - V2",
+                           "Manual Syringes: Discover 11/9/17",
+                           "eSpectra Launch",
+                           "2019 EWIB Applicant Recruitment",
+                           "Doc as Sender - Groups",
+                           "ICER - Company Targeting",
+                           "Doc as Sender - Job Titles",
+                           "ICER - Job Titles",
+                           "ICER - Website",
+                           "PAD Supplement 183.01-1805.31",
+                           "Doc as Sender - Educational Area",
+                           "AORTIC Supplement Promo - 4/1/18-6/30/18",
+                           "AORTIC Supplement Promo: Groups - 4/1/18-6/30/18",
+                           "CYOMA 030118-033118",
+                           "18.07.01 - 18.09.30 AV Access Supplement: Titles",
+                           "18.07.01 - 18.09.30 AV Access Supplement: Groups",
+                           "First Message - October",
+                           "First Message - October_1",
+                           "Q1 Test: CBD Blog Post"
+                        ]
+                     ],
+                     "autoFmt": false
+                  }
+               ],
+               "scope": 2,
+               "propName": "campaignid",
+               "defaultValue": "126996326",
+               "inputType": 1,
+               "inputLabel": "Campaign Name"
+            },
+            {
+               "type": "input",
+               "id": "98c606dc",
+               "displayName": "Period",
+               "layoutConfig": {
+                  "x": 2,
+                  "y": 0
+               },
+               "renamed": true,
+               "dstContext": {
+                  "id": "dst98c606dc",
+                  "kid": "b237e76a9a5df502fb18711314070a71"
+               },
+               "components": [
+                  {
+                     "type": "proxy",
+                     "role": "values",
+                     "id": "dc702814",
+                     "displayName": "Values",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "array(\"last_7d\",\"last_30d\",\"this_month\",\"last_month\",\"ytd\",\"lytd\")",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [
+                        [
+                           "last_7d",
+                           "last_30d",
+                           "this_month",
+                           "last_month",
+                           "ytd",
+                           "lytd"
+                        ]
+                     ],
+                     "autoFmt": false
+                  },
+                  {
+                     "type": "proxy",
+                     "role": "labels",
+                     "id": "4861980b",
+                     "displayName": "Labels",
+                     "fmtArgs": {
+                        "resultMetadata": {
+                           "ignoreDateFormat": false,
+                           "isAggregated": false,
+                           "formulaIsDataPointer": false,
+                           "suggestedName": "Unnamed 1",
+                           "resultCount": 1
+                        }
+                     },
+                     "formulas": [
+                        {
+                           "txt": "array(\"Last 7 Days\",\"Last 30 Days\",\"This Month\",\"Last Month\",\"YTD\",\"Past Year To Date\")",
+                           "ver": 2
+                        }
+                     ],
+                     "data": [
+                        [
+                           "Last 7 Days",
+                           "Last 30 Days",
+                           "This Month",
+                           "Last Month",
+                           "YTD",
+                           "Past Year To Date"
+                        ]
+                     ],
+                     "autoFmt": false
+                  }
+               ],
+               "scope": 2,
+               "propName": "period1",
+               "defaultValue": "lytd",
+               "inputType": 1,
+               "inputLabel": "Period"
+            }
+         ],
+         "rows": 1,
+         "cols": 4,
+         "widths": [
+            {
+               "x": 0,
+               "w": "45%"
+            },
+            {
+               "x": 2,
+               "w": "45%"
+            }
+         ],
+         "cellData": [
+            {
+               "x": 0,
+               "y": 0
+            },
+            {
+               "x": 2,
+               "y": 0
+            }
+         ]
+      },
+      {
+         "type": "panel_grid",
+         "id": "8655937f-18",
+         "displayName": "Layout Grid 2",
+         "components": [
+            {
+               "type": "panel_grid",
+               "id": "51434ace",
+               "displayName": "Layout Grid 3 Copy",
+               "layoutConfig": {
+                  "x": 0,
+                  "y": 1
+               },
+               "components": [
+                  {
+                     "type": "simple_value",
+                     "id": "a079fe13",
+                     "displayName": "Value Pair 2 Copy",
+                     "layoutConfig": {
+                        "x": 0,
+                        "y": 0
+                     },
+                     "dstContext": {
+                        "id": "dsta079fe13"
+                     },
+                     "components": [
+                        {
+                           "type": "label",
+                           "role": "primary",
+                           "id": "37ff0875",
+                           "displayName": "Primary Value",
+                           "size": "large",
+                           "fmt": "txt",
+                           "fmtArgs": {
+                              "resultMetadata": {
+                                 "ignoreDateFormat": false,
+                                 "isAggregated": false,
+                                 "formulaIsDataPointer": false,
+                                 "suggestedName": "Unnamed 1",
+                                 "resultCount": 1
+                              },
+                              "autoFmt": {
+                                 "fmtArgs": {},
+                                 "defaultAggregate": "COUNT",
+                                 "fmt": "txt"
+                              }
+                           },
+                           "dstContext": {
+                              "id": "dst37ff0875",
+                              "kid": "b237e76a9a5df502fb18711314070a71"
+                           },
+                           "formulas": [
+                              {
+                                 "txt": "\"Impressions\"",
+                                 "src": {
+                                    "t": "expr",
+                                    "v": false,
+                                    "c": [
+                                       {
+                                          "t": "l",
+                                          "v": "My Value"
+                                       }
+                                    ]
+                                 },
+                                 "ver": 2
+                              }
+                           ],
+                           "data": [
+                              [
+                                 "Impressions"
+                              ]
+                           ],
+                           "autoFmt": true,
+                           "align": "c",
+                           "font_colour": "cx-color_blue_5"
+                        },
+                        {
+                           "type": "label",
+                           "role": "secondary",
+                           "id": "d8df4bab",
+                           "displayName": "Secondary Value",
+                           "size": "small",
+                           "fmt": "num",
+                           "fmtArgs": {
+                              "resultMetadata": {
+                                 "ignoreDateFormat": false,
+                                 "isAggregated": false,
+                                 "expiryScheme": [
+                                    {
+                                       "expiryType": "EOD",
+                                       "expiryTimezoneId": null
+                                    }
+                                 ],
+                                 "formulaIsDataPointer": false,
+                                 "suggestedName": "Unnamed 1",
+                                 "resultCount": 1
+                              },
+                              "autoFmt": {
+                                 "fmtArgs": {
+                                    "precision": "0"
+                                 },
+                                 "defaultAggregate": "SUM",
+                                 "fmt": "num"
+                              }
+                           },
+                           "dstContext": {
+                              "id": "dstd8df4bab",
+                              "kid": "b237e76a9a5df502fb18711314070a71"
+                           },
+                           "formulas": [
+                              {
+                                 "txt": "SUM(&'54f50dcc-16')",
+                                 "src": {
+                                    "t": "expr",
+                                    "v": false,
+                                    "c": [
+                                       {
+                                          "t": "l",
+                                          "v": "My Value"
+                                       }
+                                    ]
+                                 },
+                                 "ver": 2
+                              }
+                           ],
+                           "data": [
+                              [
+                                 0
+                              ]
+                           ],
+                           "autoFmt": true,
+                           "align": "c"
+                        }
+                     ]
+                  },
+                  {
+                     "type": "chart_series",
+                     "id": "de921502",
+                     "displayName": "Bar/Line Chart 2 Copy",
+                     "layoutConfig": {
+                        "x": 0,
+                        "y": 1
+                     },
+                     "dstContext": {
+                        "id": "dstde921502",
+                        "kid": "b237e76a9a5df502fb18711314070a71"
+                     },
+                     "components": [
+                        {
+                           "type": "series_data",
+                           "role": "series",
+                           "id": "eb39144d",
+                           "displayName": "Impressions",
+                           "fmt": "num",
+                           "fmtArgs": {
+                              "resultMetadata": {
+                                 "ignoreDateFormat": false,
+                                 "isAggregated": false,
+                                 "expiryScheme": [
+                                    {
+                                       "expiryType": "EOD",
+                                       "expiryTimezoneId": null
+                                    }
+                                 ],
+                                 "formulaIsDataPointer": false,
+                                 "suggestedName": "Unnamed 1",
+                                 "resultCount": 1
+                              },
+                              "autoFmt": {
+                                 "fmtArgs": {
+                                    "precision": "0"
+                                 },
+                                 "defaultAggregate": "SUM",
+                                 "fmt": "num"
+                              }
+                           },
+                           "formulas": [
+                              {
+                                 "txt": "&'54f50dcc-16'",
+                                 "ver": 2
+                              }
+                           ],
+                           "data": [
+                              [
+                                 "0",
+                                 "0",
+                                 "0",
+                                 "0",
+                                 "0",
+                                 "0",
+                                 "0",
+                                 "0"
+                              ]
+                           ],
+                           "autoFmt": true,
+                           "seriesName": "Impressions",
+                           "renderer": "line",
+                           "chartStyle": "points_area",
+                           "showValues": true,
+                           "axis": "d8427032",
+                           "overrideColor": true
+                        },
+                        {
+                           "type": "chart_axis",
+                           "role": "axis_x",
+                           "id": "066b6dd7",
+                           "displayName": "Untitled",
+                           "fmt": "txt",
+                           "fmtArgs": {
+                              "autoFmt": {
+                                 "fmtArgs": {},
+                                 "defaultAggregate": "COUNT",
+                                 "fmt": "txt"
+                              },
+                              "resultMetadata": {
+                                 "ignoreDateFormat": false,
+                                 "isAggregated": false,
+                                 "expiryScheme": [
+                                    {
+                                       "expiryType": "EOD",
+                                       "expiryTimezoneId": null
+                                    }
+                                 ],
+                                 "formulaIsDataPointer": false,
+                                 "suggestedName": "Unnamed 1",
+                                 "resultCount": 1
+                              }
+                           },
+                           "formulas": [
+                              {
+                                 "txt": "IF(OR($period1=\"ytd\",$period1=\"lytd\"),DATE_CONVERT(&'5d0cdeeb-2',\"yyyy MM\",\"MMM-yy\"),DATE_CONVERT(&'5d0cdeeb-2',\"yyyy MM dd\",\"d-MMM-yy\"))",
+                                 "ver": 2
+                              }
+                           ],
+                           "data": [
+                              [
+                                 "Jan-19",
+                                 "Feb-19",
+                                 "Mar-19",
+                                 "Apr-19",
+                                 "May-19",
+                                 "Jun-19",
+                                 "Jul-19",
+                                 "Aug-19"
+                              ]
+                           ],
+                           "autoFmt": true,
+                           "label": "Untitled",
+                           "labelAngle": "-45",
+                           "labelDrop": 0,
+                           "showLabelTicks": true
+                        },
+                        {
+                           "type": "chart_axis",
+                           "role": "axis_y",
+                           "id": "d8427032",
+                           "displayName": "Untitled",
+                           "fmt": "num",
+                           "fmtArgs": {},
+                           "formulas": [],
+                           "data": [],
+                           "autoFmt": true,
+                           "dataDisabled": true,
+                           "label": "Untitled",
+                           "labelDrop": 0,
+                           "grid": true
+                        }
+                     ]
+                  }
+               ],
+               "rows": 2,
+               "cols": 1
+            },
+            {
+               "type": "panel_grid",
+               "id": "0deb2a15-19",
+               "displayName": "Layout Grid 3",
+               "layoutConfig": {
+                  "x": 1,
+                  "y": 1
+               },
+               "components": [
+                  {
+                     "type": "simple_value",
+                     "id": "b085801b-25",
+                     "displayName": "Value Pair",
+                     "layoutConfig": {
+                        "x": 0,
+                        "y": 0
+                     },
+                     "dstContext": {
+                        "id": "dstb085801b25"
+                     },
+                     "components": [
+                        {
+                           "type": "label",
+                           "role": "primary",
+                           "id": "656782be-26",
+                           "displayName": "Primary Value",
+                           "size": "large",
+                           "fmt": "txt",
+                           "fmtArgs": {
+                              "resultMetadata": {
+                                 "ignoreDateFormat": false,
+                                 "isAggregated": false,
+                                 "formulaIsDataPointer": false,
+                                 "suggestedName": "Unnamed 1",
+                                 "resultCount": 1
+                              },
+                              "autoFmt": {
+                                 "fmtArgs": {},
+                                 "defaultAggregate": "COUNT",
+                                 "fmt": "txt"
+                              }
+                           },
+                           "dstContext": {
+                              "id": "dst656782be26",
+                              "kid": "b237e76a9a5df502fb18711314070a71"
+                           },
+                           "formulas": [
+                              {
+                                 "txt": "\"Clicks\"",
+                                 "src": {
+                                    "t": "expr",
+                                    "v": false,
+                                    "c": [
+                                       {
+                                          "t": "l",
+                                          "v": "My Value"
+                                       }
+                                    ]
+                                 },
+                                 "ver": 2
+                              }
+                           ],
+                           "data": [
+                              [
+                                 "Clicks"
+                              ]
+                           ],
+                           "autoFmt": true,
+                           "align": "c",
+                           "font_colour": "cx-color_blue_5"
+                        },
+                        {
+                           "type": "label",
+                           "role": "secondary",
+                           "id": "43634331-27",
+                           "displayName": "Secondary Value",
+                           "size": "small",
+                           "fmt": "num",
+                           "fmtArgs": {
+                              "autoFmt": {
+                                 "fmtArgs": {
+                                    "precision": "0"
+                                 },
+                                 "defaultAggregate": "SUM",
+                                 "fmt": "num"
+                              },
+                              "resultMetadata": {
+                                 "ignoreDateFormat": false,
+                                 "isAggregated": false,
+                                 "expiryScheme": [
+                                    {
+                                       "expiryType": "EOD",
+                                       "expiryTimezoneId": null
+                                    }
+                                 ],
+                                 "formulaIsDataPointer": false,
+                                 "suggestedName": "Unnamed 1",
+                                 "resultCount": 1
+                              }
+                           },
+                           "dstContext": {
+                              "id": "dst4363433127",
+                              "kid": "b237e76a9a5df502fb18711314070a71"
+                           },
+                           "formulas": [
+                              {
+                                 "txt": "SUM(&'5ce58f56-5')",
+                                 "ver": 2
+                              }
+                           ],
+                           "data": [
+                              [
+                                 139
+                              ]
+                           ],
+                           "autoFmt": true,
+                           "align": "c"
+                        }
+                     ]
+                  },
+                  {
+                     "type": "chart_series",
+                     "id": "780dd87f-21",
+                     "displayName": "Bar/Line Chart",
+                     "layoutConfig": {
+                        "x": 0,
+                        "y": 1
+                     },
+                     "dstContext": {
+                        "id": "dst780dd87f21",
+                        "kid": "b237e76a9a5df502fb18711314070a71"
+                     },
+                     "components": [
+                        {
+                           "type": "series_data",
+                           "role": "series",
+                           "id": "b84957e8-22",
+                           "displayName": "Clicks",
+                           "fmt": "num",
+                           "fmtArgs": {
+                              "resultMetadata": {
+                                 "ignoreDateFormat": false,
+                                 "isAggregated": false,
+                                 "expiryScheme": [
+                                    {
+                                       "expiryType": "EOD",
+                                       "expiryTimezoneId": null
+                                    }
+                                 ],
+                                 "formulaIsDataPointer": false,
+                                 "suggestedName": "Unnamed 1",
+                                 "resultCount": 1
+                              },
+                              "autoFmt": {
+                                 "fmtArgs": {
+                                    "precision": "0"
+                                 },
+                                 "defaultAggregate": "SUM",
+                                 "fmt": "num"
+                              }
+                           },
+                           "formulas": [
+                              {
+                                 "txt": "&'5ce58f56-5'",
+                                 "ver": 2
+                              }
+                           ],
+                           "data": [
+                              [
+                                 "55",
+                                 "26",
+                                 "13",
+                                 "10",
+                                 "14",
+                                 "8",
+                                 "7",
+                                 "6"
+                              ]
+                           ],
+                           "autoFmt": true,
+                           "seriesName": "Clicks",
+                           "renderer": "line",
+                           "chartStyle": "points_area",
+                           "showValues": true,
+                           "axis": "05a3346f-24",
+                           "overrideColor": true,
+                           "color": "cx-theme_green_5"
+                        },
+                        {
+                           "type": "chart_axis",
+                           "role": "axis_x",
+                           "id": "728c2092-23",
+                           "displayName": "Untitled",
+                           "fmt": "txt",
+                           "fmtArgs": {
+                              "autoFmt": {
+                                 "fmtArgs": {},
+                                 "defaultAggregate": "COUNT",
+                                 "fmt": "txt"
+                              },
+                              "resultMetadata": {
+                                 "ignoreDateFormat": false,
+                                 "isAggregated": false,
+                                 "expiryScheme": [
+                                    {
+                                       "expiryType": "EOD",
+                                       "expiryTimezoneId": null
+                                    }
+                                 ],
+                                 "formulaIsDataPointer": false,
+                                 "suggestedName": "Unnamed 1",
+                                 "resultCount": 1
+                              }
+                           },
+                           "formulas": [
+                              {
+                                 "txt": "IF(OR($period1=\"ytd\",$period1=\"lytd\"),DATE_CONVERT(&'5d0cdeeb-2',\"yyyy MM\",\"MMM-yy\"),DATE_CONVERT(&'5d0cdeeb-2',\"yyyy MM dd\",\"d-MMM-yy\"))",
+                                 "ver": 2
+                              }
+                           ],
+                           "data": [
+                              [
+                                 "Jan-19",
+                                 "Feb-19",
+                                 "Mar-19",
+                                 "Apr-19",
+                                 "May-19",
+                                 "Jun-19",
+                                 "Jul-19",
+                                 "Aug-19"
+                              ]
+                           ],
+                           "autoFmt": true,
+                           "label": "Untitled",
+                           "labelAngle": "-45",
+                           "labelDrop": 0,
+                           "showLabelTicks": true
+                        },
+                        {
+                           "type": "chart_axis",
+                           "role": "axis_y",
+                           "id": "05a3346f-24",
+                           "displayName": "Untitled",
+                           "fmt": "num",
+                           "fmtArgs": {},
+                           "formulas": [],
+                           "data": [],
+                           "autoFmt": true,
+                           "dataDisabled": true,
+                           "label": "Untitled",
+                           "labelDrop": 0,
+                           "grid": true
+                        }
+                     ]
+                  }
+               ],
+               "rows": 2,
+               "cols": 1
+            },
+            {
+               "type": "panel_grid",
+               "id": "987d7ae7",
+               "displayName": "Layout Grid 3 Copy 3",
+               "layoutConfig": {
+                  "x": 0,
+                  "y": 2
+               },
+               "components": [
+                  {
+                     "type": "simple_value",
+                     "id": "b4694820",
+                     "displayName": "Value Pair Copy",
+                     "layoutConfig": {
+                        "x": 0,
+                        "y": 0
+                     },
+                     "dstContext": {
+                        "id": "dstb4694820"
+                     },
+                     "components": [
+                        {
+                           "type": "label",
+                           "role": "primary",
+                           "id": "b4ce695f",
+                           "displayName": "Primary Value",
+                           "size": "large",
+                           "fmt": "txt",
+                           "fmtArgs": {
+                              "resultMetadata": {
+                                 "ignoreDateFormat": false,
+                                 "isAggregated": false,
+                                 "formulaIsDataPointer": false,
+                                 "suggestedName": "Unnamed 1",
+                                 "resultCount": 1
+                              },
+                              "autoFmt": {
+                                 "fmtArgs": {},
+                                 "defaultAggregate": "COUNT",
+                                 "fmt": "txt"
+                              }
+                           },
+                           "dstContext": {
+                              "id": "dstb4ce695f",
+                              "kid": "b237e76a9a5df502fb18711314070a71"
+                           },
+                           "formulas": [
+                              {
+                                 "txt": "\"CTR\"",
+                                 "src": {
+                                    "t": "expr",
+                                    "v": false,
+                                    "c": [
+                                       {
+                                          "t": "l",
+                                          "v": "My Value"
+                                       }
+                                    ]
+                                 },
+                                 "ver": 2
+                              }
+                           ],
+                           "data": [
+                              [
+                                 "CTR"
+                              ]
+                           ],
+                           "autoFmt": true,
+                           "align": "c",
+                           "font_colour": "cx-color_blue_5"
+                        },
+                        {
+                           "type": "label",
+                           "role": "secondary",
+                           "id": "d73a6385",
+                           "displayName": "Secondary Value",
+                           "size": "small",
+                           "fmt": "pct",
+                           "fmtArgs": {
+                              "precision": "1",
+                              "resultMetadata": {
+                                 "ignoreDateFormat": false,
+                                 "isAggregated": false,
+                                 "expiryScheme": [
+                                    {
+                                       "expiryType": "EOD",
+                                       "expiryTimezoneId": null
+                                    }
+                                 ],
+                                 "formulaIsDataPointer": false,
+                                 "suggestedName": "Unnamed 1",
+                                 "resultCount": 1
+                              }
+                           },
+                           "dstContext": {
+                              "id": "dstd73a6385",
+                              "kid": "b237e76a9a5df502fb18711314070a71"
+                           },
+                           "formulas": [
+                              {
+                                 "txt": "AVERAGE(&'51337512')",
+                                 "ver": 2
+                              }
+                           ],
+                           "data": [
+                              [
+                                 0
+                              ]
+                           ],
+                           "autoFmt": false,
+                           "align": "c"
+                        }
+                     ]
+                  },
+                  {
+                     "type": "chart_series",
+                     "id": "dd60d9ba",
+                     "displayName": "Bar/Line Chart Copy",
+                     "layoutConfig": {
+                        "x": 0,
+                        "y": 1
+                     },
+                     "dstContext": {
+                        "id": "dstdd60d9ba",
+                        "kid": "b237e76a9a5df502fb18711314070a71"
+                     },
+                     "components": [
+                        {
+                           "type": "series_data",
+                           "role": "series",
+                           "id": "51337512",
+                           "displayName": "CTR",
+                           "fmt": "pct",
+                           "fmtArgs": {
+                              "resultMetadata": {
+                                 "ignoreDateFormat": false,
+                                 "isAggregated": false,
+                                 "expiryScheme": [
+                                    {
+                                       "expiryType": "EOD",
+                                       "expiryTimezoneId": null
+                                    }
+                                 ],
+                                 "formulaIsDataPointer": false,
+                                 "suggestedName": "Unnamed 1",
+                                 "resultCount": 1
+                              },
+                              "precision": "1"
+                           },
+                           "formulas": [
+                              {
+                                 "txt": "REPLACE(&'54f50dcc-16'/&'5ce58f56-5',ARRAY(\"Infinity\",\"NaN\"),0)",
+                                 "ver": 2
+                              }
+                           ],
+                           "data": [
+                              [
+                                 0,
+                                 0,
+                                 0,
+                                 0,
+                                 0,
+                                 0,
+                                 0,
+                                 0
+                              ]
+                           ],
+                           "autoFmt": false,
+                           "seriesName": "CTR",
+                           "renderer": "line",
+                           "chartStyle": "points_area",
+                           "showValues": true,
+                           "axis": "661e7f98",
+                           "overrideColor": true,
+                           "color": "cx-theme_brown_5"
+                        },
+                        {
+                           "type": "chart_axis",
+                           "role": "axis_x",
+                           "id": "78609ece",
+                           "displayName": "Untitled",
+                           "fmt": "txt",
+                           "fmtArgs": {
+                              "autoFmt": {
+                                 "fmtArgs": {},
+                                 "defaultAggregate": "COUNT",
+                                 "fmt": "txt"
+                              },
+                              "resultMetadata": {
+                                 "ignoreDateFormat": false,
+                                 "isAggregated": false,
+                                 "expiryScheme": [
+                                    {
+                                       "expiryType": "EOD",
+                                       "expiryTimezoneId": null
+                                    }
+                                 ],
+                                 "formulaIsDataPointer": false,
+                                 "suggestedName": "Unnamed 1",
+                                 "resultCount": 1
+                              }
+                           },
+                           "formulas": [
+                              {
+                                 "txt": "IF(OR($period1=\"ytd\",$period1=\"lytd\"),DATE_CONVERT(&'5d0cdeeb-2',\"yyyy MM\",\"MMM-yy\"),DATE_CONVERT(&'5d0cdeeb-2',\"yyyy MM dd\",\"d-MMM-yy\"))",
+                                 "ver": 2
+                              }
+                           ],
+                           "data": [
+                              [
+                                 "Jan-19",
+                                 "Feb-19",
+                                 "Mar-19",
+                                 "Apr-19",
+                                 "May-19",
+                                 "Jun-19",
+                                 "Jul-19",
+                                 "Aug-19"
+                              ]
+                           ],
+                           "autoFmt": true,
+                           "label": "Untitled",
+                           "labelAngle": "-45",
+                           "labelDrop": 0,
+                           "showLabelTicks": true
+                        },
+                        {
+                           "type": "chart_axis",
+                           "role": "axis_y",
+                           "id": "661e7f98",
+                           "displayName": "Untitled",
+                           "fmt": "pct",
+                           "fmtArgs": {},
+                           "formulas": [],
+                           "data": [],
+                           "autoFmt": true,
+                           "dataDisabled": true,
+                           "label": "Untitled",
+                           "labelDrop": 0,
+                           "grid": true
+                        }
+                     ]
+                  }
+               ],
+               "rows": 2,
+               "cols": 1
+            },
+            {
+               "type": "panel_grid",
+               "id": "1b9f1d84",
+               "displayName": "Layout Grid 3 Copy 2",
+               "layoutConfig": {
+                  "x": 1,
+                  "y": 2
+               },
+               "components": [
+                  {
+                     "type": "simple_value",
+                     "id": "cb157559-37",
+                     "displayName": "Value Pair 3",
+                     "layoutConfig": {
+                        "x": 0,
+                        "y": 0
+                     },
+                     "dstContext": {
+                        "id": "dstcb15755937"
+                     },
+                     "components": [
+                        {
+                           "type": "label",
+                           "role": "primary",
+                           "id": "8931ff81-38",
+                           "displayName": "Primary Value",
+                           "size": "large",
+                           "fmt": "txt",
+                           "fmtArgs": {
+                              "resultMetadata": {
+                                 "ignoreDateFormat": false,
+                                 "isAggregated": false,
+                                 "formulaIsDataPointer": false,
+                                 "suggestedName": "Unnamed 1",
+                                 "resultCount": 1
+                              },
+                              "autoFmt": {
+                                 "fmtArgs": {},
+                                 "defaultAggregate": "COUNT",
+                                 "fmt": "txt"
+                              }
+                           },
+                           "dstContext": {
+                              "id": "dst8931ff8138",
+                              "kid": "b237e76a9a5df502fb18711314070a71"
+                           },
+                           "formulas": [
+                              {
+                                 "txt": "\"Engagements\"",
+                                 "src": {
+                                    "t": "expr",
+                                    "v": false,
+                                    "c": [
+                                       {
+                                          "t": "l",
+                                          "v": "My Value"
+                                       }
+                                    ]
+                                 },
+                                 "ver": 2
+                              }
+                           ],
+                           "data": [
+                              [
+                                 "Engagements"
+                              ]
+                           ],
+                           "autoFmt": true,
+                           "align": "c",
+                           "font_colour": "cx-color_blue_5"
+                        },
+                        {
+                           "type": "label",
+                           "role": "secondary",
+                           "id": "6860f62d-39",
+                           "displayName": "Secondary Value",
+                           "size": "small",
+                           "fmt": "num",
+                           "fmtArgs": {
+                              "resultMetadata": {
+                                 "ignoreDateFormat": false,
+                                 "isAggregated": false,
+                                 "expiryScheme": [
+                                    {
+                                       "expiryType": "EOD",
+                                       "expiryTimezoneId": null
+                                    }
+                                 ],
+                                 "formulaIsDataPointer": false,
+                                 "suggestedName": "Unnamed 1",
+                                 "resultCount": 1
+                              },
+                              "autoFmt": {
+                                 "fmtArgs": {
+                                    "precision": "0"
+                                 },
+                                 "defaultAggregate": "SUM",
+                                 "fmt": "num"
+                              }
+                           },
+                           "dstContext": {
+                              "id": "dst6860f62d39",
+                              "kid": "b237e76a9a5df502fb18711314070a71"
+                           },
+                           "formulas": [
+                              {
+                                 "txt": "SUM(&'8c786c3f-13')",
+                                 "src": {
+                                    "t": "expr",
+                                    "v": false,
+                                    "c": [
+                                       {
+                                          "t": "l",
+                                          "v": "My Value"
+                                       }
+                                    ]
+                                 },
+                                 "ver": 2
+                              }
+                           ],
+                           "data": [
+                              [
+                                 146
+                              ]
+                           ],
+                           "autoFmt": true,
+                           "align": "c"
+                        }
+                     ]
+                  },
+                  {
+                     "type": "chart_series",
+                     "id": "9bfcd10f-40",
+                     "displayName": "Bar/Line Chart 3",
+                     "layoutConfig": {
+                        "x": 0,
+                        "y": 1
+                     },
+                     "dstContext": {
+                        "id": "dst9bfcd10f40",
+                        "kid": "b237e76a9a5df502fb18711314070a71"
+                     },
+                     "components": [
+                        {
+                           "type": "series_data",
+                           "role": "series",
+                           "id": "811b436c-41",
+                           "displayName": "Engagements",
+                           "fmt": "num",
+                           "fmtArgs": {
+                              "resultMetadata": {
+                                 "ignoreDateFormat": false,
+                                 "isAggregated": false,
+                                 "expiryScheme": [
+                                    {
+                                       "expiryType": "EOD",
+                                       "expiryTimezoneId": null
+                                    }
+                                 ],
+                                 "formulaIsDataPointer": false,
+                                 "suggestedName": "Unnamed 1",
+                                 "resultCount": 1
+                              },
+                              "autoFmt": {
+                                 "fmtArgs": {
+                                    "precision": "0"
+                                 },
+                                 "defaultAggregate": "SUM",
+                                 "fmt": "num"
+                              }
+                           },
+                           "formulas": [
+                              {
+                                 "txt": "&'8c786c3f-13'",
+                                 "ver": 2
+                              }
+                           ],
+                           "data": [
+                              [
+                                 "58",
+                                 "27",
+                                 "13",
+                                 "10",
+                                 "14",
+                                 "8",
+                                 "7",
+                                 "9"
+                              ]
+                           ],
+                           "autoFmt": true,
+                           "seriesName": "Engagements",
+                           "renderer": "line",
+                           "chartStyle": "points_area",
+                           "showValues": true,
+                           "axis": "b57cfe1f-43",
+                           "overrideColor": true,
+                           "color": "cx-theme_red_5"
+                        },
+                        {
+                           "type": "chart_axis",
+                           "role": "axis_x",
+                           "id": "cdb66706-42",
+                           "displayName": "Untitled",
+                           "fmt": "txt",
+                           "fmtArgs": {
+                              "resultMetadata": {
+                                 "ignoreDateFormat": false,
+                                 "isAggregated": false,
+                                 "expiryScheme": [
+                                    {
+                                       "expiryType": "EOD",
+                                       "expiryTimezoneId": null
+                                    }
+                                 ],
+                                 "formulaIsDataPointer": false,
+                                 "suggestedName": "Unnamed 1",
+                                 "resultCount": 1
+                              },
+                              "autoFmt": {
+                                 "fmtArgs": {},
+                                 "defaultAggregate": "COUNT",
+                                 "fmt": "txt"
+                              }
+                           },
+                           "formulas": [
+                              {
+                                 "txt": "IF(OR($period1=\"ytd\",$period1=\"lytd\"),DATE_CONVERT(&'5d0cdeeb-2',\"yyyy MM\",\"MMM-yy\"),DATE_CONVERT(&'5d0cdeeb-2',\"yyyy MM dd\",\"d-MMM-yy\"))",
+                                 "ver": 2
+                              }
+                           ],
+                           "data": [
+                              [
+                                 "Jan-19",
+                                 "Feb-19",
+                                 "Mar-19",
+                                 "Apr-19",
+                                 "May-19",
+                                 "Jun-19",
+                                 "Jul-19",
+                                 "Aug-19"
+                              ]
+                           ],
+                           "autoFmt": true,
+                           "label": "Untitled",
+                           "labelAngle": "-45",
+                           "labelDrop": 0,
+                           "showLabelTicks": true
+                        },
+                        {
+                           "type": "chart_axis",
+                           "role": "axis_y",
+                           "id": "b57cfe1f-43",
+                           "displayName": "Untitled",
+                           "fmt": "num",
+                           "fmtArgs": {},
+                           "formulas": [],
+                           "data": [],
+                           "autoFmt": true,
+                           "dataDisabled": true,
+                           "label": "Untitled",
+                           "labelDrop": 0,
+                           "grid": true
+                        }
+                     ]
+                  }
+               ],
+               "rows": 2,
+               "cols": 1
+            }
+         ],
+         "rows": 3,
+         "cols": 2
+      },
+      {
+         "type": "table",
+         "id": "9d1d2b20-1",
+         "displayName": "Table",
+         "dstContext": {
+            "id": "dst9d1d2b201",
+            "kid": "b237e76a9a5df502fb18711314070a71"
+         },
+         "components": [
+            {
+               "type": "table_col",
+               "role": "tcol",
+               "id": "5d0cdeeb-2",
+               "displayName": "Actual Dates",
+               "renamed": true,
+               "namerenamed": true,
+               "vis": false,
+               "size": "xx-small",
+               "fmt": "txt",
+               "fmtArgs": {
+                  "autoFmt": {
+                     "fmtArgs": {},
+                     "defaultAggregate": "COUNT",
+                     "fmt": "txt"
+                  },
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": false,
+                     "expiryScheme": [
+                        {
+                           "expiryType": "EOD",
+                           "expiryTimezoneId": null
+                        }
+                     ],
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "resultCount": 1
+                  }
+               },
+               "components": [],
+               "formulas": [
+                  {
+                     "txt": "SWITCH($period1,\"lytd\",GROUP(DATEVALUE(DATERANGE(DATE_STARTOF(TODAY(),\"1\",-1),TODAY()),\"yyyy MM\")),\"ytd\",GROUP(DATEVALUE(DATERANGE(DATE_STARTOF(TODAY(),\"1\"),TODAY()),\"yyyy MM\")),\"this_month\",DATEVALUE(DATERANGE(DATE_STARTOF(TODAY(),\"3\"),TODAY()),\"yyyy MM dd\"),\"last_month\",DATEVALUE(DATERANGE(DATE_STARTOF(TODAY(),\"3\",-1),DATE_ENDOF(TODAY(),\"3\",-1)),\"yyyy MM dd\"),\"last_7d\",DATEVALUE(DATERANGE(DATE_ADD(TODAY(),\"5\",-7),YESTERDAY()),\"yyyy MM dd\"),\"last_30d\",DATEVALUE(DATERANGE(DATE_ADD(TODAY(),\"5\",-30),YESTERDAY()),\"yyyy MM dd\"))",
+                     "ver": 2
+                  }
+               ],
+               "data": [
+                  [
+                     "2019 01",
+                     "2019 02",
+                     "2019 03",
+                     "2019 04",
+                     "2019 05",
+                     "2019 06",
+                     "2019 07",
+                     "2019 08"
+                  ]
+               ],
+               "autoFmt": true,
+               "name": "Actual Dates",
+               "index": 0,
+               "colHidden": "hidden",
+               "customHeader": false
+            },
+            {
+               "type": "table_col",
+               "role": "tcol",
+               "id": "5ce58f56-5",
+               "displayName": "Clicks",
+               "namerenamed": true,
+               "vis": false,
+               "size": "xx-small",
+               "fmt": "num",
+               "fmtArgs": {
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": false,
+                     "expiryScheme": [
+                        {
+                           "expiryType": "EOD",
+                           "expiryTimezoneId": null
+                        }
+                     ],
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "resultCount": 1
+                  },
+                  "autoFmt": {
+                     "fmtArgs": {
+                        "precision": "0"
+                     },
+                     "defaultAggregate": "SUM",
+                     "fmt": "num"
+                  }
+               },
+               "components": [],
+               "formulas": [
+                  {
+                     "txt": "SWITCH($period1,\"lytd\",LOOKUP(&'5d0cdeeb-2',DATEVALUE(DATE(CONCAT(4f561e89ee879ddeb1aa65edebed870a@/elements/dateRange/start/year;,4f561e89ee879ddeb1aa65edebed870a@/elements/dateRange/start/month;,4f561e89ee879ddeb1aa65edebed870a@/elements/dateRange/start/day;),\"yyyyMd\"),\"yyyy MM\"),4f561e89ee879ddeb1aa65edebed870a@/elements/clicks;),\"ytd\",LOOKUP(&'5d0cdeeb-2',DATEVALUE(DATE(CONCAT(24e8dc83ba92980667ccab84488d01c0@/elements/dateRange/start/year;,24e8dc83ba92980667ccab84488d01c0@/elements/dateRange/start/month;,24e8dc83ba92980667ccab84488d01c0@/elements/dateRange/start/day;),\"yyyyMd\"),\"yyyy MM\"),24e8dc83ba92980667ccab84488d01c0@/elements/clicks;),\"this_month\",LOOKUP(&'5d0cdeeb-2',DATEVALUE(DATE(CONCAT(33f4b7bb1d30089e9d77cdee444accc3@/elements/dateRange/start/year;,33f4b7bb1d30089e9d77cdee444accc3@/elements/dateRange/start/month;,33f4b7bb1d30089e9d77cdee444accc3@/elements/dateRange/start/day;),\"yyyyMd\"),\"yyyy MM dd\"),33f4b7bb1d30089e9d77cdee444accc3@/elements/clicks;),\"last_month\",LOOKUP(&'5d0cdeeb-2',DATEVALUE(DATE(CONCAT(413c505c1e7adfc9ed4103b2dd718a52@/elements/dateRange/start/year;,413c505c1e7adfc9ed4103b2dd718a52@/elements/dateRange/start/month;,413c505c1e7adfc9ed4103b2dd718a52@/elements/dateRange/start/day;),\"yyyyMd\"),\"yyyy MM dd\"),413c505c1e7adfc9ed4103b2dd718a52@/elements/clicks;),\"last_7d\",LOOKUP(&'5d0cdeeb-2',DATEVALUE(DATE(CONCAT(f47a6e4a382786a50f4cee8bae9c10e2@/elements/dateRange/start/year;,f47a6e4a382786a50f4cee8bae9c10e2@/elements/dateRange/start/month;,f47a6e4a382786a50f4cee8bae9c10e2@/elements/dateRange/start/day;),\"yyyyMd\"),\"yyyy MM dd\"),f47a6e4a382786a50f4cee8bae9c10e2@/elements/clicks;),\"last_30d\",LOOKUP(&'5d0cdeeb-2',DATEVALUE(DATE(CONCAT(ffa98a6d05b0ad0ff513c5a9157968a1@/elements/dateRange/start/year;,ffa98a6d05b0ad0ff513c5a9157968a1@/elements/dateRange/start/month;,ffa98a6d05b0ad0ff513c5a9157968a1@/elements/dateRange/start/day;),\"yyyyMd\"),\"yyyy MM dd\"),ffa98a6d05b0ad0ff513c5a9157968a1@/elements/clicks;))",
+                     "ver": 2
+                  }
+               ],
+               "data": [
+                  [
+                     "55",
+                     "26",
+                     "13",
+                     "10",
+                     "14",
+                     "8",
+                     "7",
+                     "6"
+                  ]
+               ],
+               "autoFmt": true,
+               "name": "Clicks",
+               "index": 1,
+               "colHidden": "hidden",
+               "customHeader": false
+            },
+            {
+               "type": "table_col",
+               "role": "tcol",
+               "id": "8c786c3f-13",
+               "displayName": "Engagements",
+               "namerenamed": true,
+               "vis": false,
+               "size": "xx-small",
+               "fmt": "num",
+               "fmtArgs": {
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": false,
+                     "expiryScheme": [
+                        {
+                           "expiryType": "EOD",
+                           "expiryTimezoneId": null
+                        }
+                     ],
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "resultCount": 1
+                  },
+                  "autoFmt": {
+                     "fmtArgs": {
+                        "precision": "0"
+                     },
+                     "defaultAggregate": "SUM",
+                     "fmt": "num"
+                  }
+               },
+               "components": [],
+               "formulas": [
+                  {
+                     "txt": "SWITCH($period1,\"lytd\",LOOKUP(&'5d0cdeeb-2',DATEVALUE(DATE(CONCAT(4f561e89ee879ddeb1aa65edebed870a@/elements/dateRange/start/year;,4f561e89ee879ddeb1aa65edebed870a@/elements/dateRange/start/month;,4f561e89ee879ddeb1aa65edebed870a@/elements/dateRange/start/day;),\"yyyyMd\"),\"yyyy MM\"),4f561e89ee879ddeb1aa65edebed870a@/elements/totalEngagements;),\"ytd\",LOOKUP(&'5d0cdeeb-2',DATEVALUE(DATE(CONCAT(24e8dc83ba92980667ccab84488d01c0@/elements/dateRange/start/year;,24e8dc83ba92980667ccab84488d01c0@/elements/dateRange/start/month;,24e8dc83ba92980667ccab84488d01c0@/elements/dateRange/start/day;),\"yyyyMd\"),\"yyyy MM\"),24e8dc83ba92980667ccab84488d01c0@/elements/totalEngagements;),\"this_month\",LOOKUP(&'5d0cdeeb-2',DATEVALUE(DATE(CONCAT(33f4b7bb1d30089e9d77cdee444accc3@/elements/dateRange/start/year;,33f4b7bb1d30089e9d77cdee444accc3@/elements/dateRange/start/month;,33f4b7bb1d30089e9d77cdee444accc3@/elements/dateRange/start/day;),\"yyyyMd\"),\"yyyy MM dd\"),33f4b7bb1d30089e9d77cdee444accc3@/elements/totalEngagements;),\"last_month\",LOOKUP(&'5d0cdeeb-2',DATEVALUE(DATE(CONCAT(413c505c1e7adfc9ed4103b2dd718a52@/elements/dateRange/start/year;,413c505c1e7adfc9ed4103b2dd718a52@/elements/dateRange/start/month;,413c505c1e7adfc9ed4103b2dd718a52@/elements/dateRange/start/day;),\"yyyyMd\"),\"yyyy MM dd\"),413c505c1e7adfc9ed4103b2dd718a52@/elements/totalEngagements;),\"last_7d\",LOOKUP(&'5d0cdeeb-2',DATEVALUE(DATE(CONCAT(f47a6e4a382786a50f4cee8bae9c10e2@/elements/dateRange/start/year;,f47a6e4a382786a50f4cee8bae9c10e2@/elements/dateRange/start/month;,f47a6e4a382786a50f4cee8bae9c10e2@/elements/dateRange/start/day;),\"yyyyMd\"),\"yyyy MM dd\"),f47a6e4a382786a50f4cee8bae9c10e2@/elements/totalEngagements;),\"last_30d\",LOOKUP(&'5d0cdeeb-2',DATEVALUE(DATE(CONCAT(ffa98a6d05b0ad0ff513c5a9157968a1@/elements/dateRange/start/year;,ffa98a6d05b0ad0ff513c5a9157968a1@/elements/dateRange/start/month;,ffa98a6d05b0ad0ff513c5a9157968a1@/elements/dateRange/start/day;),\"yyyyMd\"),\"yyyy MM dd\"),ffa98a6d05b0ad0ff513c5a9157968a1@/elements/totalEngagements;))",
+                     "ver": 2
+                  }
+               ],
+               "data": [
+                  [
+                     "58",
+                     "27",
+                     "13",
+                     "10",
+                     "14",
+                     "8",
+                     "7",
+                     "9"
+                  ]
+               ],
+               "autoFmt": true,
+               "name": "Engagements",
+               "index": 2,
+               "colHidden": "hidden",
+               "customHeader": false,
+               "align": "left"
+            },
+            {
+               "type": "table_col",
+               "role": "tcol",
+               "id": "54f50dcc-16",
+               "displayName": "Impressions",
+               "namerenamed": true,
+               "vis": false,
+               "size": "xx-small",
+               "fmt": "num",
+               "fmtArgs": {
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": false,
+                     "expiryScheme": [
+                        {
+                           "expiryType": "EOD",
+                           "expiryTimezoneId": null
+                        }
+                     ],
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "resultCount": 1
+                  },
+                  "autoFmt": {
+                     "fmtArgs": {
+                        "precision": "0"
+                     },
+                     "defaultAggregate": "SUM",
+                     "fmt": "num"
+                  }
+               },
+               "components": [],
+               "formulas": [
+                  {
+                     "txt": "SWITCH($period1,\"lytd\",LOOKUP(&'5d0cdeeb-2',DATEVALUE(DATE(CONCAT(4f561e89ee879ddeb1aa65edebed870a@/elements/dateRange/start/year;,4f561e89ee879ddeb1aa65edebed870a@/elements/dateRange/start/month;,4f561e89ee879ddeb1aa65edebed870a@/elements/dateRange/start/day;),\"yyyyMd\"),\"yyyy MM\"),4f561e89ee879ddeb1aa65edebed870a@/elements/impressions;),\"ytd\",LOOKUP(&'5d0cdeeb-2',DATEVALUE(DATE(CONCAT(24e8dc83ba92980667ccab84488d01c0@/elements/dateRange/start/year;,24e8dc83ba92980667ccab84488d01c0@/elements/dateRange/start/month;,24e8dc83ba92980667ccab84488d01c0@/elements/dateRange/start/day;),\"yyyyMd\"),\"yyyy MM\"),24e8dc83ba92980667ccab84488d01c0@/elements/impressions;),\"this_month\",LOOKUP(&'5d0cdeeb-2',DATEVALUE(DATE(CONCAT(33f4b7bb1d30089e9d77cdee444accc3@/elements/dateRange/start/year;,33f4b7bb1d30089e9d77cdee444accc3@/elements/dateRange/start/month;,33f4b7bb1d30089e9d77cdee444accc3@/elements/dateRange/start/day;),\"yyyyMd\"),\"yyyy MM dd\"),33f4b7bb1d30089e9d77cdee444accc3@/elements/impressions;),\"last_month\",LOOKUP(&'5d0cdeeb-2',DATEVALUE(DATE(CONCAT(413c505c1e7adfc9ed4103b2dd718a52@/elements/dateRange/start/year;,413c505c1e7adfc9ed4103b2dd718a52@/elements/dateRange/start/month;,413c505c1e7adfc9ed4103b2dd718a52@/elements/dateRange/start/day;),\"yyyyMd\"),\"yyyy MM dd\"),413c505c1e7adfc9ed4103b2dd718a52@/elements/impressions;),\"last_7d\",LOOKUP(&'5d0cdeeb-2',DATEVALUE(DATE(CONCAT(f47a6e4a382786a50f4cee8bae9c10e2@/elements/dateRange/start/year;,f47a6e4a382786a50f4cee8bae9c10e2@/elements/dateRange/start/month;,f47a6e4a382786a50f4cee8bae9c10e2@/elements/dateRange/start/day;),\"yyyyMd\"),\"yyyy MM dd\"),f47a6e4a382786a50f4cee8bae9c10e2@/elements/impressions;),\"last_30d\",LOOKUP(&'5d0cdeeb-2',DATEVALUE(DATE(CONCAT(ffa98a6d05b0ad0ff513c5a9157968a1@/elements/dateRange/start/year;,ffa98a6d05b0ad0ff513c5a9157968a1@/elements/dateRange/start/month;,ffa98a6d05b0ad0ff513c5a9157968a1@/elements/dateRange/start/day;),\"yyyyMd\"),\"yyyy MM dd\"),ffa98a6d05b0ad0ff513c5a9157968a1@/elements/impressions;))",
+                     "ver": 2
+                  }
+               ],
+               "data": [
+                  [
+                     "0",
+                     "0",
+                     "0",
+                     "0",
+                     "0",
+                     "0",
+                     "0",
+                     "0"
+                  ]
+               ],
+               "autoFmt": true,
+               "name": "Impressions",
+               "index": 3,
+               "colHidden": "hidden",
+               "customHeader": false,
+               "align": "left"
+            }
+         ],
+         "tableRowsType": "all",
+         "maxRows": 100000
+      }
+   ]
+}
