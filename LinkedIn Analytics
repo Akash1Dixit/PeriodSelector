@@ -274,7 +274,7 @@
                "inputLabel": "Period"
             }
          ],
-         "rows": 1,
+         "rows": 2,
          "cols": 4,
          "widths": [
             {
@@ -976,11 +976,11 @@
                                  "suggestedName": "Unnamed 1",
                                  "resultCount": 1
                               },
-                              "precision": "1"
+                              "precision": "2"
                            },
                            "formulas": [
                               {
-                                 "txt": "REPLACE(&'54f50dcc-16'/&'5ce58f56-5',ARRAY(\"Infinity\",\"NaN\"),0)",
+                                 "txt": "REPLACE(&'5ce58f56-5'/&'54f50dcc-16',ARRAY(\"Infinity\",\"NaN\"),0)",
                                  "ver": 2
                               }
                            ],
