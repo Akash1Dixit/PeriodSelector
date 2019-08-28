@@ -1,0 +1,1 @@
+https://www.googleapis.com/analytics/v3/data/ga?ids=ga:1773485&metrics=ga:users,ga:sessions,ga:pageviews,ga:pageviewsPerSession,ga:totalEvents,ga:avgSessionDuration,ga:transactionRevenue,ga:transactions&dimensions=ga:date,ga:campaign&start-date={props.start}&end-date={props.end}
