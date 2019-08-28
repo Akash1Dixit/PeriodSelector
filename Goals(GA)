@@ -1,0 +1,140 @@
+{
+   "title": "Goals",
+   "id": "a25f19e9702051e2bbc3acc9b37570df",
+   "workspace": {
+      "dimensions": {
+         "w": 899
+      },
+      "datasources": [
+         "d0b556d440e170c86256cc878179260f"
+      ]
+   },
+   "datasourceProps": [
+      "start",
+      "end"
+   ],
+   "appliedMigrations": {
+      "post_dst": true,
+      "separate_root_dsts": true,
+      "result_rows2": true
+   },
+   "components": [
+      {
+         "type": "chart_series",
+         "id": "d370ece9-1",
+         "displayName": "Bar/Line Chart",
+         "dstContext": {
+            "id": "dstd370ece91",
+            "kid": "a25f19e9702051e2bbc3acc9b37570df"
+         },
+         "components": [
+            {
+               "type": "series_data",
+               "role": "series",
+               "id": "74ed9e09-2",
+               "displayName": "Goals",
+               "fmt": "num",
+               "fmtArgs": {
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": false,
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "resultCount": 1
+                  },
+                  "autoFmt": {
+                     "fmtArgs": {
+                        "precision": "0"
+                     },
+                     "defaultAggregate": "SUM",
+                     "fmt": "num"
+                  }
+               },
+               "formulas": [
+                  {
+                     "txt": "ARRAY(SUM(SELECT(d0b556d440e170c86256cc878179260f@C:C;,IN(DATE_CONVERT(d0b556d440e170c86256cc878179260f@A:A;,\"yyyyMMdd\",\"yyyy-MM-dd\"),DATERANGE($start,$end,\"yyyy-MM-dd\")))),SUM(SELECT(d0b556d440e170c86256cc878179260f@D:D;,IN(DATE_CONVERT(d0b556d440e170c86256cc878179260f@A:A;,\"yyyyMMdd\",\"yyyy-MM-dd\"),DATERANGE($start,$end,\"yyyy-MM-dd\")))),SUM(SELECT(d0b556d440e170c86256cc878179260f@E:E;,IN(DATE_CONVERT(d0b556d440e170c86256cc878179260f@A:A;,\"yyyyMMdd\",\"yyyy-MM-dd\"),DATERANGE($start,$end,\"yyyy-MM-dd\")))),SUM(SELECT(d0b556d440e170c86256cc878179260f@F:F;,IN(DATE_CONVERT(d0b556d440e170c86256cc878179260f@A:A;,\"yyyyMMdd\",\"yyyy-MM-dd\"),DATERANGE($start,$end,\"yyyy-MM-dd\")))),SUM(SELECT(d0b556d440e170c86256cc878179260f@G:G;,IN(DATE_CONVERT(d0b556d440e170c86256cc878179260f@A:A;,\"yyyyMMdd\",\"yyyy-MM-dd\"),DATERANGE($start,$end,\"yyyy-MM-dd\")))),SUM(SELECT(d0b556d440e170c86256cc878179260f@H:H;,IN(DATE_CONVERT(d0b556d440e170c86256cc878179260f@A:A;,\"yyyyMMdd\",\"yyyy-MM-dd\"),DATERANGE($start,$end,\"yyyy-MM-dd\")))),SUM(SELECT(d0b556d440e170c86256cc878179260f@I:I;,IN(DATE_CONVERT(d0b556d440e170c86256cc878179260f@A:A;,\"yyyyMMdd\",\"yyyy-MM-dd\"),DATERANGE($start,$end,\"yyyy-MM-dd\")))),SUM(SELECT(d0b556d440e170c86256cc878179260f@J:J;,IN(DATE_CONVERT(d0b556d440e170c86256cc878179260f@A:A;,\"yyyyMMdd\",\"yyyy-MM-dd\"),DATERANGE($start,$end,\"yyyy-MM-dd\")))),SUM(SELECT(d0b556d440e170c86256cc878179260f@K:K;,IN(DATE_CONVERT(d0b556d440e170c86256cc878179260f@A:A;,\"yyyyMMdd\",\"yyyy-MM-dd\"),DATERANGE($start,$end,\"yyyy-MM-dd\")))),SUM(SELECT(d0b556d440e170c86256cc878179260f@L:L;,IN(DATE_CONVERT(d0b556d440e170c86256cc878179260f@A:A;,\"yyyyMMdd\",\"yyyy-MM-dd\"),DATERANGE($start,$end,\"yyyy-MM-dd\")))))",
+                     "ver": 2
+                  }
+               ],
+               "data": [
+                  [
+                     3,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0,
+                     0
+                  ]
+               ],
+               "autoFmt": true,
+               "seriesName": "Goals",
+               "axis": "a4caabcb-4"
+            },
+            {
+               "type": "chart_axis",
+               "role": "axis_x",
+               "id": "1db3abaf-3",
+               "displayName": "Goals",
+               "fmt": "txt",
+               "fmtArgs": {
+                  "resultMetadata": {
+                     "ignoreDateFormat": false,
+                     "isAggregated": false,
+                     "formulaIsDataPointer": false,
+                     "suggestedName": "Unnamed 1",
+                     "resultCount": 1
+                  },
+                  "autoFmt": {
+                     "fmtArgs": {},
+                     "defaultAggregate": "COUNT",
+                     "fmt": "txt"
+                  }
+               },
+               "formulas": [
+                  {
+                     "txt": "ARRAY(\"Goal 1 Completion\",\"Goal 2 Completion\",\"Goal 3 Completion\",\"Goal 4 Completion\",\"Goal 5 Completion\",\"Goal 6 Completion\",\"Goal 7 Completion\",\"Goal 8 Completion\",\"Goal 9 Completion\",\"Goal 10 Completion\")",
+                     "ver": 2
+                  }
+               ],
+               "data": [
+                  [
+                     "Goal 1 Completion",
+                     "Goal 2 Completion",
+                     "Goal 3 Completion",
+                     "Goal 4 Completion",
+                     "Goal 5 Completion",
+                     "Goal 6 Completion",
+                     "Goal 7 Completion",
+                     "Goal 8 Completion",
+                     "Goal 9 Completion",
+                     "Goal 10 Completion"
+                  ]
+               ],
+               "autoFmt": true,
+               "label": "Goals",
+               "labelDrop": 0,
+               "showLabelTicks": true
+            },
+            {
+               "type": "chart_axis",
+               "role": "axis_y",
+               "id": "a4caabcb-4",
+               "displayName": "Untitled",
+               "fmt": "num",
+               "fmtArgs": {},
+               "formulas": [],
+               "data": [],
+               "autoFmt": true,
+               "dataDisabled": true,
+               "label": "Untitled",
+               "labelDrop": 0,
+               "grid": true
+            }
+         ]
+      }
+   ]
+}
